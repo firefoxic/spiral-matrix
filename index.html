@@ -13,6 +13,20 @@
   </header>
   <main class="Page-Content">
     <h1 class="Heading Heading_level_1">Обход матрицы по спирали</h1>
+    <fieldset>
+      <legend>Задайте параметры матрицы</legend>
+      <p>
+        <label class="Label" for="dimension">Размерность квадратной матрицы:</label>
+        <input class="Input Input_type_number" id="dimension" type="number" min="1" step="2" value="7">
+      </p>
+      <p>
+        <label class="Label" for="order">Максимальный порядок чисел:</label>
+        <input class="Input Input_type_number" id="order" type="number" min="1" step="1" value="3">
+      </p>
+    </fieldset>
+    <p>
+      <button class="Button" id="button" type="button">Сгенерировать матрицу</button>
+    </p>
   </main>
   <footer class="Page-Footer">
     <p>
