@@ -7,16 +7,22 @@ const dimensionInput = document.querySelector('#dimension')
 const orderInput = document.querySelector('#order')
 const button = document.querySelector('#button')
 
-const matrix = [
-  [1, 2, 3, 4, 5],
-  [6, 7, 8, 9, 10],
-  [11, 12, 13, 14, 15],
-  [16, 17, 18, 19, 20],
-  [21, 22, 23, 24, 25]
-]
+const getRandom = (maxOrder) => Math.floor(Math.random() * 10 ** maxOrder)
+
+const fillArray = (param, arrayLength, isMatrix) => {
+  const result = []
+  for (let i = 0; i < arrayLength; i++) {
+    let arrayItem = isMatrix ? fillArray(param, arrayLength) : getRandom(param)
+    result.push(arrayItem)
+  }
+  return result
+}
 
 const renderResult = () => {
-  render(tableTemplate(matrix), matrixContainer)
+  const numbersOrder = orderInput.value
+  const matrixDimension = dimensionInput.value
+  const matrixArray = fillArray(numbersOrder, matrixDimension, true)
+  render(tableTemplate(matrixArray), matrixContainer)
 }
 
 renderResult()
