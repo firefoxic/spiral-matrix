@@ -1,24 +1,11 @@
 import { html, render } from './bem/Lib/lit-html.js'
+import tableTemplate from './bem/Table/Table.js'
 
 const matrixContainer = document.querySelector('#matrix')
 const spiralContainer = document.querySelector('#spiral')
 const dimensionInput = document.querySelector('#dimension')
 const orderInput = document.querySelector('#order')
 const button = document.querySelector('#button')
-
-const tdTemplate = (cellContent) => html`
-  <td class='Table-Cell'>${cellContent}</td>
-`
-
-const trTemplate = (arr) => html`
-  <tr class='Table-Row'>${arr.map(tdTemplate)}</tr>
-`
-
-const tableTemplate = (arr) => html`
-  <table class='Table'>
-    <tbody>${arr.map(trTemplate)}</tbody>
-  </table>
-`
 
 const matrix = [
   [1, 2, 3, 4, 5],
