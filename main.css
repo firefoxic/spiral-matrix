@@ -1,1 +1,6 @@
 @import "./bem/Root/Root.css";
+@import "./bem/Page/Page.css";
+@import "./bem/Page/-Body/Page-Body.css";
+@import "./bem/Page/-Header/Page-Header.css";
+@import "./bem/Page/-Content/Page-Content.css";
+@import "./bem/Page/-Footer/Page-Footer.css";

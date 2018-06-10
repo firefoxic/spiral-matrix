@@ -1,0 +1,8 @@
+.Page-Content {
+  all: unset;
+  box-sizing: border-box;
+  display: block;
+  max-width: 100%;
+  padding: 15px;
+  font-family: var(--font-system);
+}
