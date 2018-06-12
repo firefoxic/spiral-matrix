@@ -1,0 +1,8 @@
+.Table {
+  all: unset;
+  box-sizing: border-box;
+  display: block;
+  max-width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+}

@@ -1,0 +1,22 @@
+.Table-Cell {
+  --is-odd-cell: calc(var(--is-odd-row, 1) * var(--is-odd-col) + (1 - var(--is-odd-row, 1)) * (1 - var(--is-odd-col)));
+  --l: calc((0.8 * var(--is-odd-cell) + (1 - var(--is-odd-cell))) * 100%);
+  --color-cell: hsl(0, 0%, var(--l, 100%));
+
+  all: unset;
+  box-sizing: border-box;
+  display: table-cell;
+  padding: 10px 15px;
+  border: 3px solid hsl(0, 0%, 70%);
+  font-family: var(--font-system);
+  background-color: var(--color-cell);
+  text-align: center;
+}
+
+.Table-Cell:nth-of-type(2n-1) {
+  --is-odd-col: 1;
+}
+
+.Table-Cell:nth-of-type(2n) {
+  --is-odd-col: 0;
+}
