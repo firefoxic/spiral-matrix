@@ -1,16 +1,16 @@
 {
-  "name": "qt-cl",
+  "name": "spiral-matrix",
   "version": "1.0.0",
   "description": "Qualification test from Corona Labs",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/firefoxic/qt-cl.git"
+    "url": "git+https://github.com/firefoxic/spiral-matrix.git"
   },
   "bugs": {
-    "url": "https://github.com/firefoxic/qt-cl/issues"
+    "url": "https://github.com/firefoxic/spiral-matrix/issues"
   },
-  "homepage": "https://firefoxic.github.io/qt-cl",
+  "homepage": "https://firefoxic.github.io/spiral-matrix",
   "keywords": [
     "qualification",
     "test",
