@@ -21,8 +21,8 @@
   "author": "firefoxic",
   "license": "GPL-3.0",
   "scripts": {
-    "lint:scripts": "./node_modules/.bin/eslint scripts/**/*.js",
-    "lint:styles": "./node_modules/.bin/stylelint styles/**/*.css",
+    "lint:scripts": "./node_modules/.bin/eslint main.js bem/**/*.js",
+    "lint:styles": "./node_modules/.bin/stylelint main.css bem/**/*.css",
     "lint": "npm run lint:styles && npm run lint:scripts",
     "test": "npm run lint"
   },
