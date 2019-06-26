@@ -1,4 +1,4 @@
-import { html, render } from './bem/Lib/lit-html.js'
+import { html, render } from 'https://unpkg.com/lit-html?module'
 import { fillArray, passSpirally } from './bem/Root/Root.js'
 import tableTemplate from './bem/Table/Table.js'
 

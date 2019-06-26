@@ -1,4 +1,4 @@
-import { html } from '../Lib/lit-html.js'
+import { html } from 'https://unpkg.com/lit-html?module'
 import trTemplate from './-Row/Table-Row.js'
 
 const tableTemplate = (arr) => html`
